@@ -1,12 +1,10 @@
 <?php
     require_once 'autoload.php';
 
-    use Alura\Banco\Modelo\Conta\ContaPoupanca;
-    use Alura\Banco\Modelo\Conta\Titular;
-    use Alura\Banco\Modelo\CPF;
-    use Alura\Banco\Modelo\Endereco;
+    use Alura\Banco\Modelo\Conta\{ContaCorrente,ContaPoupanca,Titular};
+    use Alura\Banco\Modelo\{CPF,Endereco};
 
-    $conta = new ContaPoupanca(
+    $conta = new ContaCorrente(
         new Titular(
             new CPF('123.456.789-14'),
             'Guilherme Gonçalves',
