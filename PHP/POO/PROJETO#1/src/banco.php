@@ -1,9 +1,13 @@
 <?php
-    require_once 'src/Conta.php';
-    require_once 'src/Titular.php';
-    require_once 'src/Cpf.php';
+    require_once 'autoload.php';
 
-    $bruno = new Titular(new Cpf('123.456.789-10'),'Bruno');
+    use Alura\Banco\Modelo\Conta\Titular;
+    use Alura\Banco\Modelo\Conta\Conta;
+    use Alura\Banco\Modelo\Endereco;
+    use Alura\Banco\Modelo\Cpf;
+
+    $endereco = new Endereco('Ribeirão Preto','Alexandre Balbo','Rua 1','154a');
+    $bruno = new Titular(new Cpf('123.456.789-10'),'Bruno',$endereco);
     $contaBruno = new Conta($bruno);
     $contaBruno->depositar(1000);
     $contaBruno->sacar(200);
@@ -13,11 +17,12 @@
     echo (PHP_EOL.$contaBruno->recuperaNomeTitular());
     echo (PHP_EOL.Conta::recuperaNumeroDeContas());
 
-    $amanda = new Titular(new Cpf('123.456.789-11'),'Amanda');
+    $amanda = new Titular(new Cpf('123.456.789-11'),'Amanda',$endereco);
     $contaAmanda = new Conta($amanda);
     echo (PHP_EOL.Conta::recuperaNumeroDeContas());
 
-    $gustavo = new Titular(new Cpf('123.456.789-12'),'Gustavo');
+    $outroEndereco = new Endereco('Ribeirão Preto','Alexandre Balbo','Rua 2','154b');
+    $gustavo = new Titular(new Cpf('123.456.789-12'),'Gustavo',$outroEndereco);
     $contaGustavo = new Conta($gustavo);
     echo (PHP_EOL.Conta::recuperaNumeroDeContas());
 
