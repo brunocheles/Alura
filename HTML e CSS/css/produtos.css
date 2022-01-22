@@ -1,15 +1,61 @@
 header {
-    background: #BBBBBB;
+    background: no-repeat left/135%  url(../img/bg-logo-1.jpg);
+    padding:  20px 0;
+}
+nav {
+    position: absolute;
+    right: 0;
+    top: 110px;
 }
 nav ul li {
     display: inline-block;
     margin: 0 0 0 15px;
-
 }
 nav a {
     text-transform: uppercase;
     color: #020202;
     font-weight: bold;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.4rem;
+}
+nav a:hover {
+    color: #F5E015;
+}
+#flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+}
+#flex-container > .flex-item {
+    flex: 1 1 0;
+    background-color: #FFFFFF;
+    position: relative;
+    height: 380px;
+    padding: 15px;
+    border: 3px solid #090909;
+    border-radius: 13px;
+}
+main ul li + li {
+    margin-left: 10px;
+}
+.flex-item h2, .flex-item img, .flex-item p {
+    display: block;
+}
+.flex-item p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.flex-item h2 {
+    font-size: 1.35rem;
+}
+.flex-item img {
+    margin: 0 auto;
+}
+.flex-item .preco {
+    font-size: 2rem;
+    font-weight: 800;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
