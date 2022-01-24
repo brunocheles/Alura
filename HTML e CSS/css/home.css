@@ -1,9 +1,22 @@
-p, h1, h2 {
+body {
+    background: 200% url(../img/bg-principal.jpg);
+}
+#sobre {
+    background-color: #fafafa;
+    margin: 20px auto;
+}
+/* PRINCIPAL */
+.principal {
+    padding:  0 30px 20px;
     text-align: center;
 }
-.principal {
-    background-color: #c1c1c1;
-    padding: 30px;
+.principal h1 {
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+.principal p {
+    font-size: 1.2rem;
 }
 em strong {
     color: #FF0909;
@@ -14,19 +27,38 @@ em strong {
 #banner {
     width: 100%;
 }
+/* BENEFICIOS */
+.beneficios {
+    padding: 20px 20px 0;
+    display: grid;
+    grid-template-areas: "titulo imagem"
+                                        "itens imagem";
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 20px;
+}
 .itens {
     font-style: italic;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-left: 20px;
+    line-height: 1.25;
 }
-.beneficios {
-    background-color: #f1f1f1;
-    padding: 20px;
+.beneficios > h2 {
+    grid-area: titulo;
+    font-size: 1.6rem;
+    font-weight: 800;
 }
-#beneficios {
-    width: 50%;
+.beneficios > img {
+    grid-area: imagem;
 }
-ul {
+.beneficios > #itens {
+    grid-area: itens;
+}
+.beneficios ul {
     display: inline-block;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+}
+#beneficios-img {
+    width: 100%;
 }

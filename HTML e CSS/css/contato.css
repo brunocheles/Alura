@@ -1,0 +1,19 @@
+/*  */
+main form label, #preferenciaHorario #labelBlock {
+    display: block;
+    padding: 10px 0 3px;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#dados input, textarea {
+    padding: 5px;
+    font-size: 1rem;
+    width: 45%;
+}
+#preferenciaHorario label {
+    display: inline;
+    font-size: initial;
+    font-weight: 500;
+    padding-right: 10px;
+}

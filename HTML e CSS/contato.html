@@ -9,19 +9,62 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/contato.css">
         <title>Contato - Barbearia Alura</title>
     </head>
     <body>
         <header>
-            <h1><img src="./img/logo.png" alt=""></h1>
-            <nav>
-                
-                <ul class="nav">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./produtos.html">Produtos</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
-                </ul>
-            </nav>
+            <div id="cabecalho">
+                <div class="container">
+                    <h1><img src="./img/logo.png" alt=""></h1>
+
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./produtos.html">Produtos</a></li>
+                            <li><a href="./contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
+
+        <main class="container">
+            <form action="#">
+                <div id="dados">
+                    <label for="fullname">Nome Completo</label>
+                    <input type="text" name="fullname" id="fullname">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel">
+                    <label for="msg">Mensagem</label>
+                    <textarea name="msg" id="msg" cols="70" rows="10"></textarea>
+                </div>
+
+                <div id="preferenciaContato">
+                    <label for="prefereContato">Como prefere nosso contato?</label>
+                    <select name="prefereContato" id="prefereContato">
+                        <option value="Email">E-mail</option>
+                        <option value="Telefone">Telefone</option>
+                        <option value="Whatsapp">WhatsApp</option>
+                    </select>
+                </div>
+
+                <div id="preferenciaHorario">
+                    <label for="prefereHorario" id="labelBlock">Selecione o melhor horário para contato:</label>
+                    <label for="radioManha"><input type="radio" name="radioManha" id="radioManha"> Manhã</label>
+                    <label for="radioTarde"><input type="radio" name="radioTarde" id="radioTarde"> Tarde</label>
+                    <label for="radioNoite"><input type="radio" name="radioNoite" id="radioNoite"> Noite</label>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <div class="rodape">
+                <img src="./img/logo-branco.png" alt="Logo">
+                <p>&copy; Copyright Barbearia Alura - 2022</p>
+            </div>
+        </footer>
     </body>
 </html>

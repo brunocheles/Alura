@@ -1,11 +1,62 @@
-h1, h2, h3, h4, li > a, .preco {
+/* BASE */
+h1, h2, h3, h4, li > a, .preco, label {
     font-family: 'Montserrat', sans-serif;
 }
 body {
-    background-color: #f1f1f1;
+    background-color: #fafafa;
+}
+header {
+    line-height: 0;
 }
 .container {
     position: relative;
     width: 940px;
     margin: 0 auto;
+    padding: 20px 0;
+}
+/* MENU */
+#cabecalho {
+    background: no-repeat left/140% url(../img/bg-logo-1.jpg); 
+    padding:  20px 0;
+}
+nav {
+    position: absolute;
+    right: 0;
+    top: 48%;
+    transform: translateY(-50%);
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #020202;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all 200ms;
+}
+nav a:hover {
+    color: #F2E51B;
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+/* RODAPÉ */
+footer {
+    background: url(../img/bg.jpg);
+    height: 100%;
+    width: 100%;
+}
+.rodape {
+    text-align: center;
+}
+.rodape img {
+    padding-top: 40px;
+
+}
+.rodape p {
+    font-size: 1.15rem;
+    color: #fafafa;
+    padding: 20px 0 50px 0;
 }
