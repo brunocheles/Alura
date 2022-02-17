@@ -16,9 +16,15 @@
         <header>
             <div id="cabecalho">
                 <div class="container">
-                    <h1><img src="./img/logo.png" alt=""></h1>
+                    <h1><img onmouseleave="retornaImg()" onmouseover="mudaImg()" id="img-logo" src="./img/logo.png" alt="Logo"></h1>
 
                     <nav>
+                        <div class="mobile-menu" id="mobileMenu">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                        
                         <ul class="nav">
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./produtos.html">Produtos</a></li>
@@ -29,34 +35,93 @@
             </div>
         </header>
 
-        <main class="container">
-            <form action="#">
+        <main>
+            <form action="#" class="container formulario">
                 <div id="dados">
                     <label for="fullname">Nome Completo</label>
-                    <input type="text" name="fullname" id="fullname">
+                    <input type="text" name="fullname" id="fullname" required>
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" placeholder="email@dominio.com" required>
                     <label for="tel">Telefone</label>
-                    <input type="tel" name="tel" id="tel">
+                    <input type="tel" name="tel" id="tel" placeholder="(XX) XXXX-XXXX" required>
                     <label for="msg">Mensagem</label>
-                    <textarea name="msg" id="msg" cols="70" rows="10"></textarea>
+                    <textarea name="msg" id="msg" cols="70" rows="10" required></textarea>
                 </div>
 
-                <div id="preferenciaContato">
-                    <label for="prefereContato">Como prefere nosso contato?</label>
+                <fieldset id="preferenciaContato">
+                    <legend for="prefereContato">Como prefere nosso contato?</legend>
                     <select name="prefereContato" id="prefereContato">
                         <option value="Email">E-mail</option>
                         <option value="Telefone">Telefone</option>
                         <option value="Whatsapp">WhatsApp</option>
                     </select>
-                </div>
+                </fieldset>
 
-                <div id="preferenciaHorario">
-                    <label for="prefereHorario" id="labelBlock">Selecione o melhor horário para contato:</label>
-                    <label for="radioManha"><input type="radio" name="radioManha" id="radioManha"> Manhã</label>
-                    <label for="radioTarde"><input type="radio" name="radioTarde" id="radioTarde"> Tarde</label>
-                    <label for="radioNoite"><input type="radio" name="radioNoite" id="radioNoite"> Noite</label>
-                </div>
+                <fieldset id="preferenciaHorario">
+                    <legend for="prefereHorario" id="labelBlock">Selecione o melhor horário para contato:</legend>
+                    <label for="radioManha">
+                        <input type="radio" name="prefereHorario" id="radioManha" checked>
+                        <span class="checkmark-radio"></span>
+                        Manhã
+                    </label>
+                    <label for="radioTarde">
+                        <input type="radio" name="prefereHorario" id="radioTarde">
+                        <span class="checkmark-radio"></span>
+                        Tarde
+                    </label>
+                    <label for="radioNoite">
+                        <input type="radio" name="prefereHorario" id="radioNoite">
+                        <span class="checkmark-radio"></span>
+                        Noite
+                    </label>
+                </fieldset>
+
+                <label class="email" for="novEmail">
+                    <input type="checkbox" name="novEmail" id="novEmail" checked>
+                    <span class="checkmark"></span>
+                    Gostaria de receber nossas novidades por email?
+                </label>
+
+                <input type="submit" id="btnEnviar" value="Enviar Formulário">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda-feira</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-feira</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-feira</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-feira</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-feira</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>8h - 12h</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>Fechado</td>
+                        </tr>
+                    </tbody>
+                </table>
             </form>
         </main>
 
@@ -67,4 +132,5 @@
             </div>
         </footer>
     </body>
+    <script src="./js/base.js"></script>
 </html>

@@ -1,19 +1,169 @@
 /*  */
-main form label, #preferenciaHorario #labelBlock {
+.formulario{
+    margin: 5px auto;
+    padding-left: 20px;
+}
+main form label, #preferenciaHorario #labelBlock, legend {
     display: block;
     padding: 10px 0 3px;
     margin: 0;
     font-size: 1.1rem;
     font-weight: 600;
+    position: relative;
 }
 #dados input, textarea {
-    padding: 5px;
-    font-size: 1rem;
+    padding: 10px 20px;
+    font-size: 0.9rem;
     width: 45%;
+    border-radius: 5px;
+    border: 1px #0a0a0a solid;
+}
+#dados input:focus, textarea:focus, #prefereContato:focus, #preferenciaHorario input:focus, #btnEnviar:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #FF5505;
+    border-color: #FA7B05;
+}
+/* CHECKBOX CUSTOMIZADO */
+input[type=checkbox]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.email {
+    padding-left: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkmark {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #C0C0C0;
+}
+.email .checkmark:hover {
+    background-color: #FA7B05;
+}
+.email input:checked ~ .checkmark {
+    background-color: #FF5505;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.email input:checked ~ .checkmark:after {
+    display: block;
+}
+.email .checkmark:after {
+    left: 4px;
+    top: 0.5px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* CHECKBOX CUSTOMIZADO */
+#preferenciaHorario {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#preferenciaHorario input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark-radio {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: solid 1px #E0E0E0;
+    background-color: #C0C0C0;
+    border-radius: 50%;
+}
+#preferenciaHorario .checkmark-radio:hover {
+    background-color: #FA7B05;
+    border: solid 1px #FF5505;
+}
+#preferenciaHorario input:checked ~ .checkmark-radio {
+    background-color: #FF5505;
+    border: solid 1px #FA7B05;
+}
+.checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+#preferenciaHorario input:checked ~ .checkmark-radio:after {
+    display: block;
+}
+#preferenciaHorario .checkmark-radio:after {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
 }
 #preferenciaHorario label {
     display: inline;
     font-size: initial;
     font-weight: 500;
-    padding-right: 10px;
+    padding: 0 10px 0 20px;
+}
+#prefereContato {
+    margin-left: 5px;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#btnEnviar{
+    margin-top: 20px;
+    padding: 15px 80px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #FA7B05;
+    border: none !important;
+    color: #fafafa;
+    border-radius: 5px;
+    transform: none;
+    transition: all 200ms;
+}
+#btnEnviar:hover {
+    background-color: #FF5505;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+table {
+    margin: 50px 0 30px;
+    font-size: 1.2rem;
+}
+thead {
+    background-color: #505050;
+    font-weight: 700;
+    color: #fafafa;
+}
+td {
+    font-weight: 500;
+}
+th, td {
+    border: 2px #0a0a0a solid;
+    padding: 8px 15px 8px 8px;
 }
