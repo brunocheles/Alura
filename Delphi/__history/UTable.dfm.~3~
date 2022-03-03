@@ -1,0 +1,17 @@
+object Tabela: TTabela
+  OldCreateOrder = False
+  Height = 150
+  Width = 215
+  object ConexaoOracle: TZConnection
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    HostName = 'localhost'
+    Port = 1521
+    Database = 'xe'
+    User = 'system'
+    Password = 'admin'
+    Protocol = 'oracle'
+    Left = 24
+    Top = 8
+  end
+end

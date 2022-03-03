@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/02/28 18:33:25.000.503,=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.pas</Transaction>
+    <Transaction>2022/02/28 18:34:25.000.997,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit1_Contatos.dfm=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.dfm</Transaction>
+    <Transaction>2022/02/28 18:34:25.000.997,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit1_Contatos.pas=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.pas</Transaction>
+    <Transaction>2022/02/28 18:34:54.000.268,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Project_Contatos.dproj=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Project2.dproj</Transaction>
+    <Transaction>2022/03/01 21:05:34.000.798,=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.pas</Transaction>
+    <Transaction>2022/03/01 21:06:11.000.758,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.pas=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\utable.pas</Transaction>
+    <Transaction>2022/03/01 21:06:11.000.758,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.dfm=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\utable.dfm</Transaction>
+    <Transaction>2022/03/01 21:06:25.000.336,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit1_Contatos.dfm=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UContatos.dfm</Transaction>
+    <Transaction>2022/03/01 21:06:25.000.336,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit1_Contatos.pas=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UContatos.pas</Transaction>
+    <Transaction>2022/03/01 21:07:00.000.234,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\utable.dfm=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UTable.dfm</Transaction>
+    <Transaction>2022/03/01 21:07:00.000.234,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\utable.pas=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UTable.pas</Transaction>
+    <Transaction>2022/03/01 21:25:36.000.939,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UTable.pas=</Transaction>
+    <Transaction>2022/03/01 21:26:12.000.707,=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.pas</Transaction>
+    <Transaction>2022/03/01 22:00:42.000.961,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UBanco.pas=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.pas</Transaction>
+    <Transaction>2022/03/01 22:00:42.000.962,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UBanco.dfm=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.dfm</Transaction>
+    <Transaction>2022/03/01 23:58:17.251,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UBanco.pas=</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="UContatos.pas"/>
+    <File Path="UContatos.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

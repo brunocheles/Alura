@@ -1,0 +1,16 @@
+program Project_Contatos;
+
+uses
+  Vcl.Forms,
+  UContatos in 'UContatos.pas' {Form_Contatos},
+  UTable in 'UTable.pas' {Tabela: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm_Contatos, Form_Contatos);
+  Application.CreateForm(TTabela, Tabela);
+  Application.Run;
+end.

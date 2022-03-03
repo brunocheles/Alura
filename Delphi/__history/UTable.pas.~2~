@@ -1,0 +1,25 @@
+unit utable;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  TTabela = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Tabela: TTabela;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.
