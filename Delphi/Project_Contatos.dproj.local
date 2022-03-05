@@ -16,7 +16,7 @@
     <Transaction>2022/03/01 21:26:12.000.707,=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.pas</Transaction>
     <Transaction>2022/03/01 22:00:42.000.961,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UBanco.pas=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.pas</Transaction>
     <Transaction>2022/03/01 22:00:42.000.962,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UBanco.dfm=C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\Unit2.dfm</Transaction>
-    <Transaction>2022/03/01 23:58:17.251,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UBanco.pas=</Transaction>
+    <Transaction>2022/03/01 23:58:17.000.251,C:\Users\bruno\OneDrive\Documentos\GitHub\Alura\Delphi\UBanco.pas=</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="UContatos.pas"/>

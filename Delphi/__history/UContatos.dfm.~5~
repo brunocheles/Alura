@@ -12,4 +12,8 @@ object Form_Contatos: TForm_Contatos
   Font.Style = []
   PixelsPerInch = 96
   TextHeight = 13
+  object ADOConnection1: TADOConnection
+    Left = 16
+    Top = 16
+  end
 end

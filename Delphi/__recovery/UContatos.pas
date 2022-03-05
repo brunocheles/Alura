@@ -8,6 +8,7 @@ uses
 
 type
   TForm_Contatos = class(TForm)
+    BDConexão: TFDConnection;
   private
     { Private declarations }
   public
