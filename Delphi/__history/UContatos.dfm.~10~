@@ -1,0 +1,197 @@
+﻿object Form_Contatos: TForm_Contatos
+  Left = 0
+  Top = 0
+  Caption = 'Gest'#227'o de Contatos'
+  ClientHeight = 371
+  ClientWidth = 713
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = True
+  PixelsPerInch = 96
+  TextHeight = 18
+  object Label1: TLabel
+    Left = 24
+    Top = 19
+    Width = 16
+    Height = 18
+    Caption = 'ID'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 65
+    Width = 41
+    Height = 18
+    Caption = 'NOME'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Top = 105
+    Width = 70
+    Height = 18
+    Caption = 'TELEFONE'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 27
+    Top = 148
+    Width = 47
+    Height = 18
+    Caption = 'E-MAIL'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 120
+    Top = 19
+    Width = 17
+    Height = 26
+    Alignment = taCenter
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    Text = '1'
+  end
+  object Edit2: TEdit
+    Left = 120
+    Top = 62
+    Width = 105
+    Height = 26
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    Text = 'Bruno'
+  end
+  object Edit3: TEdit
+    Left = 120
+    Top = 102
+    Width = 105
+    Height = 26
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    Text = '16991325478'
+  end
+  object Edit4: TEdit
+    Left = 120
+    Top = 145
+    Width = 217
+    Height = 26
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    Text = 'bruno.cheles@outlook.com'
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 24
+    Top = 224
+    Width = 240
+    Height = 25
+    DataSource = DataSource1
+    TabOrder = 4
+  end
+  object BDConexão: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\bruno\Documents\GitHub\Alura\Delphi\Win32\Debu' +
+        'g\assets\Contatos.mdb'
+      'DriverID=MSAcc')
+    Connected = True
+    LoginPrompt = False
+    Left = 592
+    Top = 184
+  end
+  object BindSourcecontatos: TBindSourceDB
+    DataSet = FDTablecontatos
+    ScopeMappings = <>
+    Left = 592
+    Top = 248
+  end
+  object FDTablecontatos: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = BDConexão
+    TableName = 'contatos'
+    Left = 664
+    Top = 184
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 668
+    Top = 245
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourcecontatos
+      FieldName = 'id'
+      Control = Edit1
+      Track = True
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourcecontatos
+      FieldName = 'nome'
+      Control = Edit2
+      Track = True
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourcecontatos
+      FieldName = 'telefone'
+      Control = Edit3
+      Track = True
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourcecontatos
+      FieldName = 'email'
+      Control = Edit4
+      Track = True
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = FDTablecontatos
+    Left = 592
+    Top = 304
+  end
+end
