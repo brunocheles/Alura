@@ -1,0 +1,10 @@
+﻿[MySQLWaitCursor]
+Coordinates=0,0,105,33
+
+[MySQLDriverLink]
+Coordinates=124,1,100,33
+
+[MySQLConnection]
+Coordinates=40,50,106,33
+Visible=True
+
