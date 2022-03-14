@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/03/05 14:45:36.000.556,=C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/03/14 00:22:33.000.049,=C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/03/14 00:22:42.000.861,=C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/03/14 00:46:25.000.411,C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit3.pas=C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\uBanco.pas</Transaction>
+    <Transaction>2022/03/14 00:46:25.000.411,C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit3.dfm=C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\uBanco.dfm</Transaction>
+    <Transaction>2022/03/14 00:47:06.000.578,C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\uContatos.dfm</Transaction>
+    <Transaction>2022/03/14 00:47:06.000.578,C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\uContatos.pas</Transaction>
+    <Transaction>2022/03/14 00:55:23.000.410,C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\bruno\OneDrive\Documentos\Embarcadero\Studio\Projects\ProjetoContatos2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
