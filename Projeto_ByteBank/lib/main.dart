@@ -56,8 +56,10 @@ class FormularioTransferencia extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               final String numeroConta = _controladorCampoNumeroConta.text;
-              final double valor = double.tryParse(_controladorCampoValor.text);
-              Transferencia(valor, numeroConta);
+              final double? valor = double.tryParse(_controladorCampoValor.text);
+              if (numeroConta != null && valor != null) {
+                final transferenciaCriada = Transferencia(valor, numeroConta);
+              }
             },
             child: Text('Confirmar'),
           ),
@@ -114,4 +116,9 @@ class Transferencia {
   final String numeroConta;
 
   Transferencia(this.valor, this.numeroConta);
+
+  @override
+  String toString() {
+    return 'Transferência{valor: $valor, numeroConta: $numeroConta}';
+  }
 }
