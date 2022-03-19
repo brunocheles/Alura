@@ -15,16 +15,16 @@ class BytebankApp extends StatelessWidget {
           primarySwatch: Colors.purple,
         ).copyWith(
           primary: Colors.purple[600],
-          secondary: Colors.purpleAccent[200],
+          secondary: Colors.purple[300],
         ),
         buttonTheme: ButtonThemeData(
-          buttonColor: Colors.purpleAccent[200],
+          buttonColor: Colors.purple[300],
           textTheme: ButtonTextTheme.accent,
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
               backgroundColor:
-                  MaterialStateProperty.all(Colors.purpleAccent[200])),
+                  MaterialStateProperty.all(Colors.purple[300])),
         ),
       ),
       home: ListaTransferencias(),
