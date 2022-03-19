@@ -52,11 +52,8 @@ begin
   DM.MySQLTable.TableName := 'curso_delphi.contatos';
   DM.MySQLTable.Active := true;
 
-  if DM.MySQLConnection.Connected = true then
-  begin
-    status.Caption := 'Conectado';
-    carrega;
-  end;
+  status.Caption := 'Conectado';
+  carrega;
 end;
 
 {$R *.dfm}

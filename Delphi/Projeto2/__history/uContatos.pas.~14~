@@ -53,10 +53,10 @@ begin
   DM.MySQLTable.Active := true;
 
   if DM.MySQLConnection.Connected = true then
-  begin
-    status.Caption := 'Conectado';
-    carrega;
-  end;
+    begin
+     status.Caption := 'Conectado';
+     carrega;
+    end;
 end;
 
 {$R *.dfm}

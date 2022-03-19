@@ -3,7 +3,7 @@ object Form2: TForm2
   Top = 0
   Caption = 'Form2'
   ClientHeight = 363
-  ClientWidth = 619
+  ClientWidth = 691
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,6 +11,7 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -78,11 +79,25 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
   end
+  object status: TLabel
+    Left = 593
+    Top = 35
+    Width = 79
+    Height = 16
+    Caption = 'Desconectado'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object txt_ID: TEdit
     Left = 220
     Top = 19
     Width = 230
     Height = 26
+    Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -96,6 +111,7 @@ object Form2: TForm2
     Top = 52
     Width = 230
     Height = 26
+    Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -109,6 +125,7 @@ object Form2: TForm2
     Top = 93
     Width = 230
     Height = 26
+    Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -122,6 +139,7 @@ object Form2: TForm2
     Top = 134
     Width = 230
     Height = 26
+    Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -135,6 +153,7 @@ object Form2: TForm2
     Top = 174
     Width = 230
     Height = 100
+    Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -170,20 +189,5 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     TabOrder = 6
-  end
-  object Button3: TButton
-    Left = 496
-    Top = 21
-    Width = 91
-    Height = 44
-    Caption = 'Conectar'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 7
-    OnClick = Button3Click
   end
 end

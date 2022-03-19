@@ -190,4 +190,12 @@ object Form2: TForm2
     ParentFont = False
     TabOrder = 6
   end
+  object Button3: TButton
+    Left = 593
+    Top = 80
+    Width = 75
+    Height = 25
+    Caption = 'Button3'
+    TabOrder = 7
+  end
 end

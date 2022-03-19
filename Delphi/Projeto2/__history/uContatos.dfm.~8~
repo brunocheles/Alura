@@ -3,7 +3,7 @@ object Form2: TForm2
   Top = 0
   Caption = 'Form2'
   ClientHeight = 363
-  ClientWidth = 619
+  ClientWidth = 691
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -74,6 +74,19 @@ object Form2: TForm2
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object status: TLabel
+    Left = 593
+    Top = 35
+    Width = 79
+    Height = 16
+    Caption = 'Desconectado'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -185,5 +198,20 @@ object Form2: TForm2
     ParentFont = False
     TabOrder = 7
     OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 496
+    Top = 82
+    Width = 91
+    Height = 48
+    Caption = 'Button4'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = Button4Click
   end
 end

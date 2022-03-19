@@ -20,7 +20,10 @@ type
     txt_OBSERVACOES: TMemo;
     Button1: TButton;
     Button2: TButton;
+    status: TLabel;
     Button3: TButton;
+    procedure carrega;
+    procedure FormCreate(Sender: TObject);
     procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
@@ -33,9 +36,7 @@ var
 
 implementation
 
-
 uses uBanco;
-{$R *.dfm}
 
 procedure TForm2.Button3Click(Sender: TObject);
 begin
@@ -43,6 +44,28 @@ begin
   DM.MySQLConnection.Connected := true;
   DM.MySQLTable.TableName := 'curso_delphi.contatos';
   DM.MySQLTable.Active := true;
+
+  if DM.MySQLConnection.Connected = true then
+  begin
+    status.Caption := 'Conectado';
+    carrega;
+  end;
 end;
+
+procedure TForm2.carrega;
+begin
+  txt_ID.Text := DM.MySQLTable.FieldByName('ID').Value;
+  txt_NOME.Text := DM.MySQLTable.FieldByName('NOME').Value;
+  txt_EMAIL.Text := DM.MySQLTable.FieldByName('EMAIL').Value;
+  txt_TELEFONE.Text := DM.MySQLTable.FieldByName('TELEFONE').Value;
+  txt_OBSERVACOES.Text := DM.MySQLTable.FieldByName('OBSERVACOES').Value;
+end;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+
+end;
+
+{$R *.dfm}
 
 end.

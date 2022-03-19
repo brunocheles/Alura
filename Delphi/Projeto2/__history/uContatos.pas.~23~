@@ -46,6 +46,7 @@ begin
 end;
 
 procedure TForm2.FormCreate(Sender: TObject);
+uses uBanco;
 begin
   DM.MySQLConnection.Params.Database := 'curso_delphi';
   DM.MySQLConnection.Connected := true;
