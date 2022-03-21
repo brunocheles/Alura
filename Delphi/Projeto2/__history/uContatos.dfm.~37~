@@ -1,0 +1,373 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 335
+  ClientWidth = 786
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 13
+    Width = 17
+    Height = 19
+    Caption = 'ID'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 46
+    Width = 44
+    Height = 19
+    Caption = 'NOME'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Top = 87
+    Width = 52
+    Height = 19
+    Caption = 'E-MAIL'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Top = 128
+    Width = 76
+    Height = 19
+    Caption = 'TELEFONE'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Top = 168
+    Width = 110
+    Height = 19
+    Caption = 'OBSERVA'#199#213'ES'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object status: TLabel
+    Left = 693
+    Top = 16
+    Width = 79
+    Height = 16
+    Caption = 'Desconectado'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object procurar: TSpeedButton
+    Left = 570
+    Top = 43
+    Width = 117
+    Height = 46
+    Caption = 'PROCURAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnClick = procurarClick
+  end
+  object sair: TSpeedButton
+    Left = 680
+    Top = 287
+    Width = 81
+    Height = 30
+    Caption = 'SAIR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnClick = sairClick
+  end
+  object img_foto: TImage
+    Left = 452
+    Top = 16
+    Width = 90
+    Height = 90
+    Picture.Data = {
+      0954506E67496D61676589504E470D0A1A0A0000000D49484452000000180000
+      00180806000000E0773DF8000004AA4944415478DAB5957F4C1B6518C7DFF77A
+      D72B2D1CD79F022DA3F263236C8C82325836F623C4F8EF12E3F42F214B166786
+      71594CDC8CD19868E61F5B4422993A822C138710271B02634C417099B8917506
+      1884B996ADB4144A7A6DE9F5AEF7A3BEB7D408462C2EF1493E792E79DFF7FB7D
+      DFE7BD7B0E82FF1857AE0ED48992542F8AA2431045A72088401004475C10D0B3
+      D076ECD5C3E757CF871B15EE1DBC9E27CB72B74EABB35BCC26065761768E8F03
+      3E8EE079108A44DCF35E1F1D0C85DCC8ECC07B6F1E9FDBB04152DC595C54481B
+      683DB83B3905663D1E81214926CC8B9245140CD954BA5A4F6702EF829FB9EF72
+      03E584A7DE3939B721839E816B77B6166FB1E7E6E4D02D1D9DA2A9C01E34163E
+      1D1C5E5A5832E05AAA34C360F6B81E9251D72C55946B5579BC3E30313DE33CF3
+      FEBBE5290D949AD314D55859514E5FB8F49D58BA77B78F4A4F67E7D8151F06A1
+      CEA0262D91B8A48AF2000B85E3383F75CB98976556DDBC35CEF897968EA534B8
+      D4DB375451BACDEE5B5CB2DF8F457DCF9495AEC809F08822081224807939CEA9
+      96F9B86A9995E164202EB95D3EF2A03E66656331F7E04F23EE94069D97AF04F7
+      ECACA67B8647F8A2FDBB1EA921B69CAD498B3EA549B32CC7796C3EC682B1E500
+      F7AB8F15E78350ED0D62C4EB94BFA02C87D6B47EDDC1A43468FFF6D2D09EEAAA
+      7D577F9B60F4A59BBDBC2C2F56EA4D0612C38027C6B2E34C807B1066092F03D5
+      3E0612C8407DD8C2D9F65B35D4275FB40CA73468EBE844063BF6758F3B996871
+      C1EF05195ACC9AA625023C1F9EE7A2FC428CC3FD2B32EE0F61843F0489705445
+      36D8445B4D8E26FDC38F9B521B9CBBD08E4A54450FDE7672139B0A272B2CE969
+      0121B61212E23C2FCA30C203557005E201C4621812265CAB3D9E1BC92DC9A689
+      131F7C94BA44CDAD6D8F2F39CAB2F67E467A183399824181E73008128204201B
+      8758380670C544147075AD011A8E9668CCFE40C07DBAF9B3D497DCF8F9B9BA4C
+      2AA37187A38C1EBD3B255C84D67B404D8810AD946400380162110EA8A08413CF
+      1AB5D4216BCCB23DDF869F6AFA94999C9E49FD9A2A71BAF9AC6B4B61813D7F53
+      2EF8797236DEC5A47B1EAAF451C54096A1CAAAD5900E9D401DCCC3F43BB76DC6
+      7BAFFFC09C6DBBE01EF8A63DF587363636B677DEBFD03D3E314D576CDFC61417
+      E4D3A8EF80A925965B4868399396C46D6909B2D466242C6633F871F406D3D4D2
+      8A8C65C760D7C5F55B45ED0B2F653AB6960C3F5753EDE8EEEB0733F766CE5454
+      EDACB5188DF6CAF232C69A9D6527701C1004F118D41EDC5D3DBDB47362D28DC4
+      0F28E28A0E5C4F1C090C1F7AF945C7C0D010B8D6DBE71CFFE566B93276F4ADB7
+      EB50B7ACFFAB45A3768D1A1B6A6E4E4992DAFA3BBEFAF776BD5A7C706404E8B4
+      19404312F5C75F3B721E3C41C0FF537C8DC146C477ED7F9E404921F10F806496
+      6F0C0DC86B0C528923E13C9448440411458849310121AD3255024BEA2AF07003
+      E246944A10B7D1CE621B2D0D5A472926F0958637EEA4284B164A4588ACE40914
+      1865774A39FE8626B94C48CE89C08613271306F42FD56874E84C8923DF5FEE1D
+      4003B9881C841EE1463C4278D109824953D33AF7B082E6486B2EB9AA66F7975A
+      5D66BDD56A1B753D702BE233080FC28526FB9FF4EDF933FE008C986F71EC920B
+      730000000049454E44AE426082}
+    Stretch = True
+  end
+  object txt_ID: TEdit
+    Left = 196
+    Top = 12
+    Width = 230
+    Height = 26
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object txt_NOME: TEdit
+    Left = 196
+    Top = 44
+    Width = 230
+    Height = 26
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object txt_EMAIL: TEdit
+    Left = 196
+    Top = 85
+    Width = 230
+    Height = 26
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object txt_TELEFONE: TEdit
+    Left = 196
+    Top = 126
+    Width = 230
+    Height = 26
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object txt_OBSERVACOES: TMemo
+    Left = 196
+    Top = 166
+    Width = 230
+    Height = 100
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+  end
+  object NovoDado: TButton
+    Left = 24
+    Top = 289
+    Width = 90
+    Height = 30
+    Caption = 'NOVO'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    OnClick = NovoDadoClick
+  end
+  object salvar: TButton
+    Left = 120
+    Top = 289
+    Width = 90
+    Height = 30
+    Caption = 'SALVAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    OnClick = salvarClick
+  end
+  object Voltar: TButton
+    Left = 544
+    Top = 289
+    Width = 25
+    Height = 30
+    Caption = '<'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    OnClick = VoltarClick
+  end
+  object Avancar: TButton
+    Left = 575
+    Top = 289
+    Width = 26
+    Height = 30
+    Caption = '>'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = AvancarClick
+  end
+  object editar: TButton
+    Left = 216
+    Top = 289
+    Width = 90
+    Height = 30
+    Caption = 'EDITAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+    OnClick = editarClick
+  end
+  object excluir: TButton
+    Left = 312
+    Top = 289
+    Width = 90
+    Height = 30
+    Caption = 'EXCLUIR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    OnClick = excluirClick
+  end
+  object cancelar: TButton
+    Left = 408
+    Top = 289
+    Width = 90
+    Height = 30
+    Caption = 'CANCELAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    OnClick = cancelarClick
+  end
+  object txt_PROCURA: TEdit
+    Left = 570
+    Top = 11
+    Width = 117
+    Height = 26
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 12
+  end
+  object DBGrid1: TDBGrid
+    Left = 452
+    Top = 128
+    Width = 320
+    Height = 138
+    DataSource = DM.MySQLDataSource
+    TabOrder = 13
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnDblClick = DBGrid1DblClick
+  end
+end

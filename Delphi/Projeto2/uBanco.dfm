@@ -38,11 +38,12 @@ object DM: TDM
     Top = 104
   end
   object MySQLDataSource: TDataSource
-    DataSet = MySQLQuery
+    DataSet = MySQLTable
     Left = 272
     Top = 104
   end
   object MySQLTable: TFDTable
+    BeforePost = MySQLTableBeforePost
     Connection = MySQLConnection
     TableName = 'curso_delphi.contatos'
     Left = 152

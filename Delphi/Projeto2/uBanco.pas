@@ -19,6 +19,7 @@ type
     MySQLQuery: TFDQuery;
     MySQLDataSource: TDataSource;
     MySQLTable: TFDTable;
+    procedure MySQLTableBeforePost(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -30,8 +31,18 @@ var
 
 implementation
 
+  uses uContatos;
+
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure TDM.MySQLTableBeforePost(DataSet: TDataSet);
+begin
+  MySQLTable.FieldByName('NOME').value := Form2.txt_NOME.Text;
+  MySQLTable.FieldByName('EMAIL').value := Form2.txt_EMAIL.Text;
+  MySQLTable.FieldByName('TELEFONE').value := Form2.txt_TELEFONE.Text;
+  MySQLTable.FieldByName('OBSERVACOES').value := Form2.txt_OBSERVACOES.Text;
+end;
 
 end.

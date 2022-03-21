@@ -2,8 +2,8 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Form2'
-  ClientHeight = 363
-  ClientWidth = 691
+  ClientHeight = 335
+  ClientWidth = 786
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,8 +15,8 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 48
-    Top = 21
+    Left = 24
+    Top = 13
     Width = 17
     Height = 19
     Caption = 'ID'
@@ -28,8 +28,8 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 48
-    Top = 54
+    Left = 24
+    Top = 46
     Width = 44
     Height = 19
     Caption = 'NOME'
@@ -41,8 +41,8 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 48
-    Top = 95
+    Left = 24
+    Top = 87
     Width = 52
     Height = 19
     Caption = 'E-MAIL'
@@ -54,8 +54,8 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 48
-    Top = 136
+    Left = 24
+    Top = 128
     Width = 76
     Height = 19
     Caption = 'TELEFONE'
@@ -67,8 +67,8 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label5: TLabel
-    Left = 48
-    Top = 176
+    Left = 24
+    Top = 168
     Width = 110
     Height = 19
     Caption = 'OBSERVA'#199#213'ES'
@@ -80,8 +80,8 @@ object Form2: TForm2
     ParentFont = False
   end
   object status: TLabel
-    Left = 593
-    Top = 35
+    Left = 693
+    Top = 16
     Width = 79
     Height = 16
     Caption = 'Desconectado'
@@ -92,9 +92,44 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
   end
+  object procurar: TSpeedButton
+    Left = 570
+    Top = 43
+    Width = 117
+    Height = 46
+    Caption = 'PROCURAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnClick = procurarClick
+  end
+  object sair: TSpeedButton
+    Left = 680
+    Top = 287
+    Width = 81
+    Height = 30
+    Caption = 'SAIR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnClick = sairClick
+  end
+  object img_foto: TImage
+    Left = 452
+    Top = 16
+    Width = 90
+    Height = 90
+    Stretch = True
+  end
   object txt_ID: TEdit
-    Left = 220
-    Top = 19
+    Left = 196
+    Top = 12
     Width = 230
     Height = 26
     Enabled = False
@@ -107,8 +142,8 @@ object Form2: TForm2
     TabOrder = 0
   end
   object txt_NOME: TEdit
-    Left = 220
-    Top = 52
+    Left = 196
+    Top = 44
     Width = 230
     Height = 26
     Enabled = False
@@ -121,8 +156,8 @@ object Form2: TForm2
     TabOrder = 1
   end
   object txt_EMAIL: TEdit
-    Left = 220
-    Top = 93
+    Left = 196
+    Top = 85
     Width = 230
     Height = 26
     Enabled = False
@@ -135,8 +170,8 @@ object Form2: TForm2
     TabOrder = 2
   end
   object txt_TELEFONE: TEdit
-    Left = 220
-    Top = 134
+    Left = 196
+    Top = 126
     Width = 230
     Height = 26
     Enabled = False
@@ -149,8 +184,8 @@ object Form2: TForm2
     TabOrder = 3
   end
   object txt_OBSERVACOES: TMemo
-    Left = 220
-    Top = 174
+    Left = 196
+    Top = 166
     Width = 230
     Height = 100
     Enabled = False
@@ -162,9 +197,9 @@ object Form2: TForm2
     ParentFont = False
     TabOrder = 4
   end
-  object Button1: TButton
-    Left = 48
-    Top = 304
+  object NovoDado: TButton
+    Left = 24
+    Top = 289
     Width = 90
     Height = 30
     Caption = 'NOVO'
@@ -175,10 +210,11 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     TabOrder = 5
+    OnClick = NovoDadoClick
   end
-  object Button2: TButton
-    Left = 144
-    Top = 304
+  object salvar: TButton
+    Left = 120
+    Top = 289
     Width = 90
     Height = 30
     Caption = 'SALVAR'
@@ -189,5 +225,108 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     TabOrder = 6
+    OnClick = salvarClick
+  end
+  object Voltar: TButton
+    Left = 544
+    Top = 289
+    Width = 25
+    Height = 30
+    Caption = '<'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    OnClick = VoltarClick
+  end
+  object Avancar: TButton
+    Left = 575
+    Top = 289
+    Width = 26
+    Height = 30
+    Caption = '>'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = AvancarClick
+  end
+  object editar: TButton
+    Left = 216
+    Top = 289
+    Width = 90
+    Height = 30
+    Caption = 'EDITAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+    OnClick = editarClick
+  end
+  object excluir: TButton
+    Left = 312
+    Top = 289
+    Width = 90
+    Height = 30
+    Caption = 'EXCLUIR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    OnClick = excluirClick
+  end
+  object cancelar: TButton
+    Left = 408
+    Top = 289
+    Width = 90
+    Height = 30
+    Caption = 'CANCELAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    OnClick = cancelarClick
+  end
+  object txt_PROCURA: TEdit
+    Left = 570
+    Top = 11
+    Width = 117
+    Height = 26
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 12
+  end
+  object DBGrid1: TDBGrid
+    Left = 452
+    Top = 128
+    Width = 320
+    Height = 138
+    DataSource = DM.MySQLDataSource
+    TabOrder = 13
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnDblClick = DBGrid1DblClick
   end
 end

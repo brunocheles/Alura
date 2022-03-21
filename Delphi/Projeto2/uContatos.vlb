@@ -32,9 +32,9 @@ Coordinates=530,60,87,51
 Coordinates=450,120,112,51
 Visible=True
 
-[Button1]
+[NovoDado]
 Coordinates=154,1,53,51
 
-[Button2]
+[salvar]
 Coordinates=154,71,53,51
 
