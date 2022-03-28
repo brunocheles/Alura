@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:new_bytebank/Screens/contact_form.dart';
 import 'package:new_bytebank/Screens/contacts_list.dart';
+import 'package:new_bytebank/database/app_database.dart';
+import 'package:new_bytebank/models/contact.dart';
 
 import 'Screens/dashboard.dart';
 
-void main() => runApp(const BytebankApp());
+void main() {
+  runApp(const BytebankApp());
+  save(Contact(1,'Fernando',1000)).then((id){
+    findAll().then((contacts) => debugPrint(contacts.toString()));
+  });
+}
 
 class BytebankApp extends StatelessWidget {
   const BytebankApp({Key? key}) : super(key: key);
