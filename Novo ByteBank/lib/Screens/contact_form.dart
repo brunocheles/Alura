@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:new_bytebank/database/DAO/contact_dao.dart';
-import 'package:new_bytebank/database/app_database.dart';
 import 'package:new_bytebank/models/contact.dart';
 
 class ContactForm extends StatefulWidget {
@@ -42,7 +41,7 @@ class _ContactFormState extends State<ContactForm> {
                 ),
                 keyboardType: TextInputType.number,
               ),
-              Padding(
+                Padding(
                 padding: const EdgeInsets.only(top: 16.0),
                 child: SizedBox(
                   width: double.maxFinite,
